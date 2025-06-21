@@ -19,7 +19,7 @@ class RenameCommands(discord.Cog):
         changes_self = True
         change_others = ctx.user.guild_permissions.manage_nicknames or ctx.user.id == self.trusted_id
         if not change_others and not (changes_self and ctx.author == member):
-            await ctx.respond(f':x: You don\'t have permissions to manage nicknames on this server!', ephemeral=True)
+            await ctx.respond(f':x: You don\'t have permissions to change other people\'s nicknames on this server!', ephemeral=True)
             return False
 
         try:
