@@ -1,7 +1,7 @@
 python-dotenv~=1.1.0
 py-cord
-audioop-lts
-openai~=1.82.1
-torch
-torchvision
-torchaudio
+# audioop-lts
+# openai~=1.82.1
+# torch
+# torchvision
+# torchaudio
