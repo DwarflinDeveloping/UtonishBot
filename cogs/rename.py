@@ -15,7 +15,8 @@ class RenameCommands(discord.Cog):
         self.trusted_id = int(trusted_id) if trusted_id.isnumeric() else trusted_id
 
     async def edit_nick(self, ctx: ApplicationContext, member: discord.Member, nick: str | None) -> bool:
-        changes_self = ctx.user.guild_permissions.change_nickname
+        # changes_self = ctx.user.guild_permissions.change_nickname
+        changes_self = True
         change_others = ctx.user.guild_permissions.manage_nicknames or ctx.user.id == self.trusted_id
         if not change_others and not (changes_self and ctx.author == member):
             await ctx.respond(f':x: You don\'t have permissions to manage nicknames on this server!', ephemeral=True)
