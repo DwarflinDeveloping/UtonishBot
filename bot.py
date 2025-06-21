@@ -3,7 +3,7 @@ from discord.ext import commands
 from discord import Message
 import os
 
-from analyzer import MessageAnalyzer
+# from analyzer import MessageAnalyzer
 from cogs.quotes import QuoteCommands
 from cogs.rename import RenameCommands
 from cogs.testing import TestCommands
@@ -25,7 +25,7 @@ class UtonishBot(commands.Bot):
         super().__init__(intents=intents, **kwargs)
 
         self._token = token
-        self.analyzer = MessageAnalyzer() if message_checking else None
+        # self.analyzer = MessageAnalyzer() if message_checking else None
         self.message_checking = message_checking
         self.quotes = list(QuoteGenerator.load())
 
@@ -39,6 +39,7 @@ class UtonishBot(commands.Bot):
         self.add_cog(QuoteCommands(self))
 
     async def on_message(self, message: Message):
+        return
         if any((
             self.analyzer is None,
             not self.message_checking,
