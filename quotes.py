@@ -62,4 +62,4 @@ class QuoteGenerator:
 
         with open(save_path, 'r', encoding='utf-8') as file:
             for line in file.readlines():
-                yield line.replace('\\n', '\n')[:-1]
+                yield line.replace('\\n', '\n').replace('@everyone', '\@everyone')[:-1]
