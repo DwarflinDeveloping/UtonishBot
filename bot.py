@@ -1,9 +1,13 @@
+import json
+
 import discord
 from discord.ext import commands
 from discord import Message
 import os
 
+from cogs import ReactionListener
 from cogs.censor import CensorCommands
+from cogs.copypasta import CopypastaCommands
 # from analyzer import MessageAnalyzer
 from cogs.quotes import QuoteCommands
 from cogs.rename import RenameCommands
@@ -36,6 +40,8 @@ class UtonishBot(commands.Bot):
         self.xtweak_quotes = list(QuoteGenerator.load('utonish_quotes.json'))
         self.askutonish_quotes = list(QuoteGenerator.load('askutonish.txt'))
 
+        self.copypastas = json.loads(open('UtonishPasta/copypastas.json', 'r').read())
+
     @property
     def quotes(self) -> list[dict]:
         return self.benyi_quotes + self.potential_quotes + self.dtm_quotes + self.bilip_quotes + self.utonish_quotes
@@ -49,6 +55,8 @@ class UtonishBot(commands.Bot):
         self.add_cog(RenameCommands(self))
         self.add_cog(CensorCommands(self))
         self.add_cog(QuoteCommands(self))
+        self.add_cog(CopypastaCommands(self))
+        self.add_cog(ReactionListener(self))
 
     async def on_message(self, message: Message):
         return

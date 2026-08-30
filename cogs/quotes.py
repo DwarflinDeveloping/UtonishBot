@@ -6,11 +6,14 @@ import discord
 from discord import ApplicationContext, option
 from discord.ext import commands
 
+from cogs import PersistentDeleteView
+from cogs.censor import CensorCommands
+
 if TYPE_CHECKING:
     from bot import UtonishBot
 
 
-class QuoteInfoView(discord.ui.View):
+class QuoteInfoView(PersistentDeleteView):
     """A view containing a button to show extra quote metadata."""
 
     def __init__(self, quote: dict):
@@ -35,7 +38,7 @@ class QuoteInfoView(discord.ui.View):
         embed = discord.Embed(color=discord.Color.blue())
 
         # 1. Add Timestamp
-        timestamp_str = quote.get('timestamp')
+        timestamp_str = quote.get('timestamp', None)
         if timestamp_str:
             dt = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
             embed.add_field(name="Date", value=discord.utils.format_dt(dt, style='F'))
@@ -98,6 +101,7 @@ class QuoteGuessView(discord.ui.View):
 class QuoteCommands(discord.Cog):
     def __init__(self, bot: 'UtonishBot'):
         self.bot = bot
+        self.censor_interface = CensorCommands(self.bot)
 
     async def _quote(self, ctx: ApplicationContext, quotes: list):
         if not quotes:
@@ -105,17 +109,17 @@ class QuoteCommands(discord.Cog):
             return
 
         quote = random.choice(quotes)
-        content = quote['content'].replace('@', '＠')
+        content = self.censor_interface.censor_text(quote['content'].replace('@', '＠'))
         view = QuoteInfoView(quote)
         await ctx.respond(content, view=view)
 
     def get_askutonish(self) -> str:
-        if random.random() < 0.002:
-            return 'YOU HAVE BEEN SENT TO THE T̵̲̰̈́R̵̘̝͒̏I̵̦̝̓̅A̵̡̞̅̈L̵̺̞̈́S̵̙̝̈́. PREPARE TO DIE.'
+        if random.random() < 0.001:
+            return '👹 YOU HAVE BEEN SENT TO THE T̵̲̰̈́R̵̘̝͒̏I̵̦̝̓̅A̵̡̞̅̈L̵̺̞̈́S̵̙̝̈́. PREPARE TO DIE.'
         if random.random() < 0.03:
-            return '**Utonish is extremely angered by this ridiculous remark…\nHe has ordered a flock of killer drones to take you out. Better go hide!**'
+            return '**😠 Utonish is extremely angered by this ridiculous remark…\nHe has ordered a flock of killer drones to take you out. Better go hide!**'
         if random.random() < 0.40:
-            return '**Utonish does not respond to your request. You have been ghosted.**'
+            return '*Utonish does not respond to your request. You have been ghosted.*'
 
         return random.choice(self.bot.askutonish_quotes)
 
@@ -184,7 +188,7 @@ class QuoteCommands(discord.Cog):
     async def search(self, ctx: ApplicationContext, query: str):
         found_quote = next((q for q in self.bot.quotes if q['content'].startswith(query)), None)
         if found_quote:
-            content = found_quote['content'].replace('@', '＠')
+            content = self.censor_interface.censor_text(found_quote['content'].replace('@', '＠'))
             await ctx.respond(content, view=QuoteInfoView(found_quote))
         else:
             await ctx.respond("Quote no longer exists.", ephemeral=True)

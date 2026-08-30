@@ -12,65 +12,81 @@ if TYPE_CHECKING:
 class CensorCommands(discord.Cog):
     def __init__(self, bot: 'UtonishBot'):
         self.bot = bot
-        # Ported from index.html
-        self.censor_dict = {
-            "gay": "gɑy",
-            "ass": "ɑss",
-            "hate": "hɑte",
-            "ha te": "hɑte",
-            "fuck": "fᴜck",
-            "suck": "sᴜck",
-            "porn": "pᴏrn",
-            "cock": "cᴏck",
-            "zionist": "ziᴏnist",
-            "femboy": "fembᴏy",
-            "fem boy": "fembᴏy",
-            "kill": "kıll",
-            "racist": "racıst",
+        # Single-character replacements for str.maketrans
+        self.homoglyph_map = {
+            'a': 'а',
+            'c': 'с',
+            'e': 'е',
+            'i': 'і',
+            'j': 'ј',
+            'o': 'о',
+            'p': 'р',
+            's': 'ѕ',
+            'u': 'ᴜ',
+            'x': 'х',
+            'y': 'у',
+            'A': 'А',
+            'B': 'В',
+            'C': 'С',
+            'E': 'Е',
+            'H': 'Н',
+            'I': 'І',
+            'J': 'Ј',
+            'K': 'К',
+            'M': 'М',
+            'O': 'О',
+            'P': 'Р',
+            'S': 'Ѕ',
+            'T': 'Т',
+            'X': 'Х',
+            'Y': 'Ү',
+        }
+        # Pre-build translation table for performance
+        self.trans_table = str.maketrans(self.homoglyph_map)
+
+        # Multi-character replacements
+        self.string_map = {
             ":middle_finger:": "🖕",
         }
 
-    def preserve_casing(self, original: str, replacement: str) -> str:
-        """Ported logic from preserveCasing in index.html"""
-        if original.isupper():
-            return replacement.upper()
-        if original[0].isupper():
-            return replacement[0].upper() + replacement[1:].lower()
-        return replacement.lower()
+    def replace_homoglyphs(self, text: str) -> str:
+        # First, apply single-character translation
+        text = text.translate(self.trans_table)
 
-    def censor_text(self, text: str) -> tuple[str, int]:
-        """Ported logic from censorText in index.html using Python regex"""
-        count = 0
+        # Next, handle multi-character substring replacements
+        for key, value in self.string_map.items():
+            text = text.replace(key, value)
 
-        for key, value in self.censor_dict.items():
-            # 'gi' equivalent in Python is re.IGNORECASE
-            pattern = re.compile(re.escape(key), re.IGNORECASE)
+        return text
 
-            def replace_match(match):
-                nonlocal count
-                count += 1
-                return self.preserve_casing(match.group(0), value)
-
-            text = pattern.sub(replace_match, text)
-
-        return text, count
+    def censor_text(self, text: str) -> str:
+        text = self.replace_homoglyphs(text)
+        return text
 
     @discord.slash_command(
         name='censor',
-        description='Converts text into a version that will not get censored'
+        description='Converts text into a version that will not get censored',
+        integration_types={
+            discord.IntegrationType.guild_install,
+            discord.IntegrationType.user_install
+        },
+        contexts={
+            discord.InteractionContextType.guild,
+            discord.InteractionContextType.bot_dm,
+            discord.InteractionContextType.private_channel
+        }
     )
     @option("text", description="The text you want to uncensor", required=True)
     async def censor(self, ctx: ApplicationContext, text: str):
         """Processes the text and returns it ephemerally to the user."""
-        censored_output, modification_count = self.censor_text(text)
+        censored_output = self.censor_text(text)
 
-        # Using an Embed for a cleaner look similar to the website UI
         embed = discord.Embed(
             title="ゆ Utonish Uncensored",
             description=censored_output,
             color=discord.Color.blue()
         )
-        embed.set_footer(text=f"Words modified: {modification_count}")
+        embed = None
+        # embed.set_footer(text=f"Words modified: {modification_count}")
 
-        # ephemeral=True ensures only the user who ran the command sees the output
-        await ctx.respond(embed=embed, ephemeral=True)
+        await ctx.respond(censored_output, embed=embed, ephemeral=True)
