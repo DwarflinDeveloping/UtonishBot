@@ -17,7 +17,7 @@ class QuoteGenerator:
         self.quotes_dir = Path(quotes_dir)
         self.save_path = save_path
 
-        self.quotes: list[str] = []
+        self.quotes: list[dict] = []
         self.run()
 
     def iter_messages(self) -> Iterator[dict]:
@@ -55,11 +55,15 @@ class QuoteGenerator:
             file.writelines(exported_quotes)
 
     @staticmethod
-    def load(save_path: os.PathLike = 'quotes.txt') -> Iterator[str]:
+    def load(save_path: os.PathLike = 'quotes.txt') -> Iterator[dict|str]:
+                                                  # -> Iterator[str]:
         save_path = Path(save_path)
         if not save_path.is_file():
             return
 
         with open(save_path, 'r', encoding='utf-8') as file:
-            for line in file.readlines():
-                yield line.replace('\\n', '\n').replace('@everyone', '＠everyone')[:-1]
+            if save_path.suffix == '.txt':
+                for line in file.readlines():
+                    yield line.replace('\\n', '\n').replace('@everyone', '＠everyone')[:-1]
+            else:
+                yield from json.loads(file.read())

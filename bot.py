@@ -3,6 +3,7 @@ from discord.ext import commands
 from discord import Message
 import os
 
+from cogs.censor import CensorCommands
 # from analyzer import MessageAnalyzer
 from cogs.quotes import QuoteCommands
 from cogs.rename import RenameCommands
@@ -27,7 +28,17 @@ class UtonishBot(commands.Bot):
         self._token = token
         # self.analyzer = MessageAnalyzer() if message_checking else None
         self.message_checking = message_checking
-        self.quotes = list(QuoteGenerator.load())
+        self.benyi_quotes = list(QuoteGenerator.load('benyi_quotes.json'))
+        self.potential_quotes = list(QuoteGenerator.load('potential_quotes.json'))
+        self.dtm_quotes = list(QuoteGenerator.load('dtm_quotes.json'))
+        self.bilip_quotes = list(QuoteGenerator.load('bilip_quotes.json'))
+        self.utonish_quotes = list(QuoteGenerator.load('utonish_quotes.json'))
+        self.xtweak_quotes = list(QuoteGenerator.load('utonish_quotes.json'))
+        self.askutonish_quotes = list(QuoteGenerator.load('askutonish.txt'))
+
+    @property
+    def quotes(self) -> list[dict]:
+        return self.benyi_quotes + self.potential_quotes + self.dtm_quotes + self.bilip_quotes + self.utonish_quotes
 
     @property
     def token(self) -> str:
@@ -36,6 +47,7 @@ class UtonishBot(commands.Bot):
     def setup(self) -> None:
         # self.add_cog(TestCommands(self))
         self.add_cog(RenameCommands(self))
+        self.add_cog(CensorCommands(self))
         self.add_cog(QuoteCommands(self))
 
     async def on_message(self, message: Message):
@@ -49,6 +61,11 @@ class UtonishBot(commands.Bot):
             return
 
         print(self.analyzer.analyse_message(message.content))
+
+    async def on_ready(self):
+        # This tells the bot to keep an eye out for any button starting with this ID
+        # We pass self.quotes = None because the callback will look it up dynamically
+        print(f'Logged in as {self.user} (ID: {self.user.id})')
 
     async def start(self, *_) -> None:
         await super().start(self.token)

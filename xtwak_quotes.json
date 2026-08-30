@@ -1,0 +1,571 @@
+[
+    {
+        "id": "1457306251917791467",
+        "type": "Reply",
+        "timestamp": "2026-01-04T10:34:45.898+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "So hello there. I am participating in the \"red wave\" (as you like to call it) against which you just declared war. To let you know, we are not bots. We are legitimate and our goals are just. There are people like you who support countries because of political reasons or nationalism. We are the force that balances this game.",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [
+            {
+                "id": "1291046199570333717",
+                "name": "bosmium",
+                "discriminator": "0000",
+                "nickname": "Bosmium",
+                "color": null,
+                "isBot": false,
+                "roles": [],
+                "avatarUrl": "https://cdn.discordapp.com/avatars/1291046199570333717/d0c9a4c353906e72787ff2b4838ccd99.png?size=512"
+            }
+        ],
+        "reference": {
+            "messageId": "1457304021512487130",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457306841200722061",
+        "type": "Reply",
+        "timestamp": "2026-01-04T10:37:06.394+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "Yes that's balancing. You think they added a dislike button out of joke? Dislikes are an integral part of this game.",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [
+            {
+                "id": "1291046199570333717",
+                "name": "bosmium",
+                "discriminator": "0000",
+                "nickname": "Bosmium",
+                "color": null,
+                "isBot": false,
+                "roles": [],
+                "avatarUrl": "https://cdn.discordapp.com/avatars/1291046199570333717/d0c9a4c353906e72787ff2b4838ccd99.png?size=512"
+            }
+        ],
+        "reference": {
+            "messageId": "1457306577286598729",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457307559135543432",
+        "type": "Reply",
+        "timestamp": "2026-01-04T10:39:57.563+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "Some countries get more dislikes than others at the moment. I personally don't select certain countries to dislike but there may be others with preferences.",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [
+            {
+                "emoji": {
+                    "id": "",
+                    "name": "👌",
+                    "code": "ok_hand",
+                    "isAnimated": false,
+                    "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44c.svg"
+                },
+                "count": 1,
+                "users": [
+                    {
+                        "id": "704591856125870200",
+                        "name": "daniel_the_great_ru",
+                        "discriminator": "0000",
+                        "nickname": "Daniel the Great 🇷🇺",
+                        "color": null,
+                        "isBot": false,
+                        "avatarUrl": "https://cdn.discordapp.com/avatars/704591856125870200/e40bd96a226bfdf58ffafae7bf546321.png?size=512"
+                    }
+                ]
+            }
+        ],
+        "mentions": [
+            {
+                "id": "704591856125870200",
+                "name": "daniel_the_great_ru",
+                "discriminator": "0000",
+                "nickname": "Daniel the Great 🇷🇺",
+                "color": null,
+                "isBot": false,
+                "roles": [],
+                "avatarUrl": "https://cdn.discordapp.com/avatars/704591856125870200/e40bd96a226bfdf58ffafae7bf546321.png?size=512"
+            }
+        ],
+        "reference": {
+            "messageId": "1457306918795087902",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457308220233351252",
+        "type": "Reply",
+        "timestamp": "2026-01-04T10:42:35.181+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "Again, the dislike button wasn't added out of joke. This is a core mechanic we are taking use of. If you fear being disliked maybe ComboVote is not the right game for you.",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [
+            {
+                "id": "1401176428216848405",
+                "name": "caucasian2527",
+                "discriminator": "0000",
+                "nickname": "Caucasian Mapper",
+                "color": null,
+                "isBot": false,
+                "roles": [],
+                "avatarUrl": "https://cdn.discordapp.com/avatars/1401176428216848405/1ea174794e92267832dce8e9965b61c1.png?size=512"
+            }
+        ],
+        "reference": {
+            "messageId": "1457307146839654542",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457308533749059755",
+        "type": "Reply",
+        "timestamp": "2026-01-04T10:43:49.929+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "There have been attempts to dislike AU in Country Grouping, i believe. Consider it luck that we currently have other targets.",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [
+            {
+                "id": "1291046199570333717",
+                "name": "bosmium",
+                "discriminator": "0000",
+                "nickname": "Bosmium",
+                "color": null,
+                "isBot": false,
+                "roles": [],
+                "avatarUrl": "https://cdn.discordapp.com/avatars/1291046199570333717/d0c9a4c353906e72787ff2b4838ccd99.png?size=512"
+            }
+        ],
+        "reference": {
+            "messageId": "1457307757106561149",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457309073828741151",
+        "type": "Reply",
+        "timestamp": "2026-01-04T10:45:58.694+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "Yes, that's what a dislike button is for, reverting gained points. Or \"harm\" and \"ruining other people's work\" as you like to call it.",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [
+            {
+                "id": "1291046199570333717",
+                "name": "bosmium",
+                "discriminator": "0000",
+                "nickname": "Bosmium",
+                "color": null,
+                "isBot": false,
+                "roles": [],
+                "avatarUrl": "https://cdn.discordapp.com/avatars/1291046199570333717/d0c9a4c353906e72787ff2b4838ccd99.png?size=512"
+            }
+        ],
+        "reference": {
+            "messageId": "1457308367105298622",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457309673278410908",
+        "type": "Reply",
+        "timestamp": "2026-01-04T10:48:21.614+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "They go to your streams where all competition is eliminated per the mechanics. Don't expect sympathy from us please.",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [
+            {
+                "id": "1291046199570333717",
+                "name": "bosmium",
+                "discriminator": "0000",
+                "nickname": "Bosmium",
+                "color": null,
+                "isBot": false,
+                "roles": [],
+                "avatarUrl": "https://cdn.discordapp.com/avatars/1291046199570333717/d0c9a4c353906e72787ff2b4838ccd99.png?size=512"
+            }
+        ],
+        "reference": {
+            "messageId": "1457309382307090455",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457310504950431906",
+        "type": "Reply",
+        "timestamp": "2026-01-04T10:51:39.9+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "I personally have not been part of any disliking \"for years\". I discovered that website fairly recently. I can only provide info from my viewpoint here.",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [
+            {
+                "id": "1291046199570333717",
+                "name": "bosmium",
+                "discriminator": "0000",
+                "nickname": "Bosmium",
+                "color": null,
+                "isBot": false,
+                "roles": [],
+                "avatarUrl": "https://cdn.discordapp.com/avatars/1291046199570333717/d0c9a4c353906e72787ff2b4838ccd99.png?size=512"
+            }
+        ],
+        "reference": {
+            "messageId": "1457309896579092552",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457310957922549883",
+        "type": "Reply",
+        "timestamp": "2026-01-04T10:53:27.897+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "But take this info with the following background: You want all countries green, thus you press the like button. We're doing the opposite which can't be morally wrong.",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [],
+        "reference": {
+            "messageId": "1457310663558041743",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457312252347809824",
+        "type": "Reply",
+        "timestamp": "2026-01-04T10:58:36.512+01:00",
+        "timestampEdited": "2026-01-04T11:04:27.395+01:00",
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "When i joined 20 minutes ago I admired this community for its will to fight. Staging a fight is our own goal after all. You can give up at any moment but don't pretend like you had no chance. There may be some who cheat to get their dislikes. On the other hand some countries here have used bots for multiple days on end. I just want you to know that this never was \"unfair\" or whatever. You chose to give up and i respect your decision just like i respect you as an enemy.",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [
+            {
+                "id": "378400034204680194",
+                "name": "kha.n4ng.rob",
+                "discriminator": "0000",
+                "nickname": "·༻Khả❀Năng༺·",
+                "color": null,
+                "isBot": false,
+                "roles": [],
+                "avatarUrl": "https://cdn.discordapp.com/avatars/378400034204680194/0c9cefa5ac549e79b935f3fd8d92ab96.png?size=512"
+            }
+        ],
+        "reference": {
+            "messageId": "1457310959679963147",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457312864850280622",
+        "type": "Reply",
+        "timestamp": "2026-01-04T11:01:02.544+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "We both know many countries in that game cheat as well",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [
+            {
+                "id": "1291046199570333717",
+                "name": "bosmium",
+                "discriminator": "0000",
+                "nickname": "Bosmium",
+                "color": null,
+                "isBot": false,
+                "roles": [],
+                "avatarUrl": "https://cdn.discordapp.com/avatars/1291046199570333717/d0c9a4c353906e72787ff2b4838ccd99.png?size=512"
+            }
+        ],
+        "reference": {
+            "messageId": "1457312482392539238",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457315674266538055",
+        "type": "Reply",
+        "timestamp": "2026-01-04T11:12:12.361+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "You're making this about my character traits or personal believes in my private life? Let me tell you, there is no way to judge a person morally by their actions in an online voting game. I don't even know any of you. There is no personal connection between us involved here. This is a game like all others just with the extra variable of dislikes. And i could recall again at this point that I have no preferences in who i dislike. And even that wouldn't be enough for you to judge random strangers on anything.",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [
+            {
+                "id": "378400034204680194",
+                "name": "kha.n4ng.rob",
+                "discriminator": "0000",
+                "nickname": "·༻Khả❀Năng༺·",
+                "color": null,
+                "isBot": false,
+                "roles": [],
+                "avatarUrl": "https://cdn.discordapp.com/avatars/378400034204680194/0c9cefa5ac549e79b935f3fd8d92ab96.png?size=512"
+            }
+        ],
+        "reference": {
+            "messageId": "1457313290274476083",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457318859919851604",
+        "type": "Reply",
+        "timestamp": "2026-01-04T11:24:51.88+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "Just quit the game like you said you would. It's not that deep of an issue and reflects neither on your life nor on mine. May i ask what country or item you even vote for on this website?",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [
+            {
+                "id": "378400034204680194",
+                "name": "kha.n4ng.rob",
+                "discriminator": "0000",
+                "nickname": "·༻Khả❀Năng༺·",
+                "color": null,
+                "isBot": false,
+                "roles": [],
+                "avatarUrl": "https://cdn.discordapp.com/avatars/378400034204680194/0c9cefa5ac549e79b935f3fd8d92ab96.png?size=512"
+            }
+        ],
+        "reference": {
+            "messageId": "1457317555931975741",
+            "channelId": "1456132120237052045",
+            "guildId": "1040362761617670146"
+        },
+        "inlineEmojis": []
+    },
+    {
+        "id": "1457319056842428418",
+        "type": "Default",
+        "timestamp": "2026-01-04T11:25:38.83+01:00",
+        "timestampEdited": null,
+        "callEndedTimestamp": null,
+        "isPinned": false,
+        "content": "You are taking this all way more serious than it actually is",
+        "author": {
+            "id": "1441032482484129792",
+            "name": "xtweak8",
+            "discriminator": "0000",
+            "nickname": "Xtweak",
+            "color": null,
+            "isBot": false,
+            "roles": [],
+            "avatarUrl": "https://cdn.discordapp.com/avatars/1441032482484129792/7dda9e6bf62aeba8ba469c581db0339d.png?size=512"
+        },
+        "attachments": [],
+        "embeds": [],
+        "stickers": [],
+        "reactions": [],
+        "mentions": [],
+        "inlineEmojis": []
+    }
+]
