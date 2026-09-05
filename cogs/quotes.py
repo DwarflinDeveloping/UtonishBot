@@ -115,11 +115,11 @@ class QuoteCommands(discord.Cog):
 
     def get_askutonish(self) -> str:
         if random.random() < 0.001:
-            return '👹 YOU HAVE BEEN SENT TO THE T̵̲̰̈́R̵̘̝͒̏I̵̦̝̓̅A̵̡̞̅̈L̵̺̞̈́S̵̙̝̈́. PREPARE TO DIE.'
+            return '# 👹 YOU HAVE BEEN SENT TO THE T̵̲̰̈́R̵̘̝͒̏I̵̦̝̓̅A̵̡̞̅̈L̵̺̞̈́S̵̙̝̈́. PREPARE TO DIE.'
         if random.random() < 0.03:
             return '**😠 Utonish is extremely angered by this ridiculous remark…\nHe has ordered a flock of killer drones to take you out. Better go hide!**'
         if random.random() < 0.40:
-            return '*Utonish does not respond to your request. You have been ghosted.*'
+            return '*Utonish does not respond to your request. You have been ghоѕtеd.*'
 
         return random.choice(self.bot.askutonish_quotes)
 

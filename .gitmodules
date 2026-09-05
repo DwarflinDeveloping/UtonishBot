@@ -1,3 +1,6 @@
 [submodule "UtonishPasta"]
 	path = UtonishPasta
 	url = https://github.com/DwarflinDeveloping/UtonishPasta
+[submodule "UtonishLogger"]
+	path = UtonishLogger
+	url = https://github.com/DwarflinDeveloping/UtonishLogger
